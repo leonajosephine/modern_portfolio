@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Leona Josephine - Portfolio",
@@ -18,6 +18,8 @@ export default function RootLayout({
   <body>
   {/* Theme Switcher (fixed) */}
   <ThemeSwitcher />
+  {/* Smooth inertial scroll (Lenis) */}
+  <SmoothScroll />
   {children}
   </body>
   </html>
