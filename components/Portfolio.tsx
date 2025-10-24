@@ -1,19 +1,16 @@
+import Image from "next/image";
+
 function Item({ title, desc, image }: { title: string; desc: string; image: string }) {
-    return (
-      <div className="portfolio-item">
-        <div
-          className="portfolio-image"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <h3>{title}</h3>
-        <p>{desc}</p>
+  return (
+    <div className="portfolio-item">
+      <div className="portfolio-image">
+        <Image src={image} alt={title} fill style={{ objectFit: "cover" }} />
       </div>
-    );
-  }
+      <h3>{title}</h3>
+      <p>{desc}</p>
+    </div>
+  );
+}
   
   export default function Portfolio() {
     return (
