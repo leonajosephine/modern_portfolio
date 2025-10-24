@@ -86,9 +86,9 @@ body {
 
 .hero-title {
 font-size: clamp(3rem, 10vw, 7rem); font-weight: 800; margin-bottom: 20px; letter-spacing: -2px;
-background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
--webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: fadeInUp 1s ease;
-}
+/*background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);  altes gradient für titel*/
+/*-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: fadeInUp 1s ease;*/
+} 
 .hero-subtitle { font-size: clamp(1.2rem, 3vw, 2rem); color: var(--text-secondary); font-weight: 300; animation: fadeInUp 1s ease 0.2s backwards; }
 
 /* 3D hero container */
@@ -98,14 +98,24 @@ background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
 
 /* Cursor spotlight (follows --mx/--my from JS) */
 .cursor-spotlight { position: absolute; inset: 0; pointer-events: none; z-index: 1;
-background: radial-gradient(600px 600px at var(--mx,50%) var(--my,50%),
+background: radial-gradient(100px 100px at var(--mx,50%) var(--my,50%),
 rgba(255,255,255,0.08), rgba(0,0,0,0) 60%);
 transition: background .2s ease;
 }
 /* Interactive letters */
 .interactive-title { display: inline-block; }
-.interactive-letter { display: inline-block; padding: 0 .02em; }
-/* About/Portfolio already defined – here nothing else needed */
+/* Jeder Buchstabe */
+.interactive-letter {
+  display: inline-block;
+  padding: 0 .02em;
+  color: var(--text-primary);
+
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
 
 
 /* About Section */
