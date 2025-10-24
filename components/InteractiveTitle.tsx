@@ -17,10 +17,10 @@ export default function InteractiveTitle({ text }: { text: string }) {
 		<motion.span
 		  key={i}
 		  className="interactive-letter"
-		  whileHover={{ y: -4, scale: 1.08 }}
+		  whileHover={{ y: -4, scale: 1.2 }}
 		  transition={{ type: "spring", stiffness: 500, damping: 20 }}
 		>
-		  {ch === " " ? "\u00A0" : ch}
+		  {ch === " " ? "\u00A0" : ch} 
 		</motion.span>
 	  ))}
 	</h1>
