@@ -83,11 +83,12 @@ body {
     min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
+
 .hero-title {
 font-size: clamp(3rem, 10vw, 7rem); font-weight: 800; margin-bottom: 20px; letter-spacing: -2px;
-/*background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);  altes gradient für titel*/
-/*-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: fadeInUp 1s ease;*/
-} 
+background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: fadeInUp 1s ease;
+}
 .hero-subtitle { font-size: clamp(1.2rem, 3vw, 2rem); color: var(--text-secondary); font-weight: 300; animation: fadeInUp 1s ease 0.2s backwards; }
 
 /* 3D hero container */
@@ -97,32 +98,14 @@ font-size: clamp(3rem, 10vw, 7rem); font-weight: 800; margin-bottom: 20px; lette
 
 /* Cursor spotlight (follows --mx/--my from JS) */
 .cursor-spotlight { position: absolute; inset: 0; pointer-events: none; z-index: 1;
-background: radial-gradient(100px 100px at var(--mx,50%) var(--my,50%),
+background: radial-gradient(600px 600px at var(--mx,50%) var(--my,50%),
 rgba(255,255,255,0.08), rgba(0,0,0,0) 60%);
 transition: background .2s ease;
 }
 /* Interactive letters */
 .interactive-title { display: inline-block; }
-.gradient-letter {
-  display: inline-block;
-  padding: 0 .02em;
-
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Hier passiert die Magie: gleiche Gesamtbreite, individueller X-Offset */
-  background-size: var(--gw, 100%) 100%;
-  background-position: var(--gx, 0%) 0;
-
-  /* Flicker-Prävention bei transform */
-  will-change: transform;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
+.interactive-letter { display: inline-block; padding: 0 .02em; }
+/* About/Portfolio already defined – here nothing else needed */
 
 
 /* About Section */
@@ -182,12 +165,6 @@ transition: background .2s ease;
     font-size: clamp(1.05rem, 1.1vw + 0.6rem, 1.6rem);
     text-shadow: 0 2px 8px rgba(0,0,0,.42);
   }
-  /* Helle Theme-Anpassung für Titel und Beschreibung */
-  [data-theme="light"] .portfolio-title,
-  [data-theme="light"] .portfolio-desc{
-    color: var(--bg-secondary);
-    text-shadow: 0 2px 8px rgba(0,0,0,.42);
-    }
   
   /* Beschreibung – initial versteckt, beim Hover fährt sie auf */
   .portfolio-desc {
