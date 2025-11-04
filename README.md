@@ -13,41 +13,15 @@ A sleek, modern portfolio website showcasing projects with a dynamic theme switc
 - **Smooth Animations**: Elegant transitions and hover effects
 - **Portfolio Gallery**: Showcase your projects in a responsive grid
 - **Contact Integration**: Easy-to-use contact button
+- **Modern Hero with 3D**: Cool Rext effekt in Hero section with 3d element. 
 
 ## Quick Start
-
-Simply open `index.html` in your web browser to view the portfolio.
-
-For development with live reload, you can use any local server:
-
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# Node.js (if you have npx installed)
-npx serve
-
-# PHP
-php -S localhost:8000
-```
-
-Then visit `http://localhost:8000` in your browser.
 
 ## Customization
 
 ### Update Your Information
-Edit `index.html` to change:
-- Your name in the hero section
-- About Me content
-- Portfolio projects
-- Contact email in `script.js`
 
 ### Modify Themes
-Edit the CSS variables in `styles.css` under each theme section:
-- `:root` - Dark theme (default)
-- `[data-theme="light"]` - Light theme
-- `[data-theme="sunset"]` - Sunset theme
-- `[data-theme="ocean"]` - Ocean theme
 
 ## Files Structure
 
@@ -104,4 +78,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
