@@ -204,6 +204,11 @@ transition: background .2s ease;
     text-shadow: 0 2px 8px rgba(0,0,0,.35);
   }
 
+  [data-theme="light"] .portfolio-desc,
+  [data-theme="light"] .portfolio-title {
+    color: var(--bg-secondary);
+  }
+
   /* Hover-Status: Text einblenden, mehr „Luft“ durch stärkeres Gradient */
   .portfolio-item:hover .portfolio-caption {
     background: linear-gradient(to top, rgba(0,0,0,.62) 0%, rgba(0,0,0,0) 58%);
