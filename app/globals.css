@@ -295,6 +295,10 @@ transition: background .2s ease;
 .contact-btn:hover { background: var(--accent-hover); transform: translateY(-3px); box-shadow: 0 8px 30px var(--shadow); }
 .contact-btn:active { transform: translateY(-1px); }
 
+[data-theme="light"] .contact-btn {
+  color: var(--bg-secondary);
+}
+
 /* Footer */
 .footer { padding: 40px 20px; text-align: center; background-color: var(--bg-primary); color: var(--text-secondary); border-top: 1px solid var(--border); }
 .footerContact {
