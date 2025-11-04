@@ -15,23 +15,6 @@ A sleek, modern portfolio website showcasing projects with a dynamic theme switc
 - **Contact Integration**: Easy-to-use contact button
 - **Modern Hero with 3D**: Cool Rext effekt in Hero section with 3d element. 
 
-## Quick Start
-
-## Customization
-
-### Update Your Information
-
-### Modify Themes
-
-## Files Structure
-
-```
-modern_portfolio/
-├── index.html    # Main HTML structure
-├── styles.css    # All styling and themes
-├── script.js     # Theme switcher and interactions
-└── README.md     # This file
-```
 
 ## Browser Support
 
