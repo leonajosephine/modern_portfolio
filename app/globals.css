@@ -324,6 +324,7 @@ transition: background .2s ease;
 .theme-btn { width: 35px; height: 35px; font-size: 16px; }
 .portfolio-grid { grid-template-columns: 1fr; }
 .about, .portfolio, .contact { padding: 60px 20px; }
+.footerContact { flex-direction: column; gap: 10px; padding-bottom: 30px;}
 }
 
 /* Smooth Scrolling */
