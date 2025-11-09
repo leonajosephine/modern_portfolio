@@ -92,7 +92,7 @@ body {
 
 .hero-title {
 font-size: clamp(3rem, 10vw, 7rem); font-weight: 800; margin-bottom: 20px; letter-spacing: -2px;
-background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 60%);
+background: var(--text-primary);/*linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 60%);*/
 -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: fadeInUp 1s ease;
 }
 .hero-subtitle { font-size: clamp(1.2rem, 3vw, 2rem); color: var(--text-secondary); font-weight: 300; animation: fadeInUp 1s ease 0.2s backwards; }
@@ -147,6 +147,11 @@ transition: background .2s ease;
     cursor: pointer; 
     background: var(--bg-primary); 
     transition: background-color 0.3s ease; 
+}
+.skills button:hover {
+  background: var(--accent); 
+  color: var(--bg-primary); 
+  transform: scale(1.05); 
 }
 
 /* Portfolio Section */
