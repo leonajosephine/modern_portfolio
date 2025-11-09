@@ -1,28 +1,33 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Float } from "@react-three/drei";
+import { OrbitControls, Environment, Center, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
-function Blob() {
-return (
-<Float speed={1.2} rotationIntensity={0.6} floatIntensity={1.2}>
-<mesh>
-<icosahedronGeometry args={[1.4, 1]} />
-<meshStandardMaterial metalness={0.15} roughness={0.25}
-color="#57c1ff" />
-</mesh>
-</Float>
-);
+
+function HeroModel() {
+  // lädt /public/models/hero.glb
+  const { scene } = useGLTF("/models/abstract_shape.glb");
+
+  return (
+    // Center richtet das Modell automatisch aus (Pivot, Bounds, Scaling)
+    <Center disableZ>
+      <primitive object={scene} />
+    </Center>
+  );
 }
+// Optional: Preload beim Start
+// useGLTF.preload("/models/hero.glb");
+
 export default function Hero3D() {
-return (
-<Canvas camera={{ position: [0, 0, 4], fov: 55 }}>
-<ambientLight intensity={0.5} />
-<directionalLight position={[3, 4, 5]} intensity={1.2} />
-<Suspense fallback={null}>
-<Blob />
-</Suspense>
-<OrbitControls enablePan={false} enableZoom={false} autoRotate
-autoRotateSpeed={0.6} />
-</Canvas>
-);
+  return (
+    <Canvas camera={{ position: [0, 0, 3.2], fov: 55 }} gl={{ alpha: true }}>
+      {/* Licht & Umgebung für schöne Reflektionen */}
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[3, 4, 5]} intensity={1.3} />
+      <Suspense fallback={null}>
+        <Environment preset="studio" />  {/* macht die „Studio-Highlights“ */}
+        <HeroModel />
+      </Suspense>
+      <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={0.6} />
+    </Canvas>
+  );
 }
