@@ -3,7 +3,7 @@ import { useCallback } from "react";
 
 export default function Contact() {
 const onContact = useCallback(() => {
-const email = "leona.josephine@example.com";
+const email = "leona.redmann@gmx.net";
 const subject = "Portfolio Inquiry";
 const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 window.location.href = mailto;
