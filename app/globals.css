@@ -279,6 +279,110 @@ transition: background .2s ease;
   .item--wide  { grid-column: span 2; }         /*  doppelte Breite */
   .item--big   { grid-column: span 2; grid-row: span 2; } /* groß in beide Richtungen */
 
+ /* === Portfolio Modal === */
+.portfolio-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 70;
+}
+
+.portfolio-modal {
+  position: fixed;
+  inset: 5% 6%;
+  background: var(--bg-secondary);
+  opacity: 0.95;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 60px var(--shadow);
+  z-index: 71;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.portfolio-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.portfolio-modal-header h3 {
+  font-size: 1.2rem;
+}
+
+.portfolio-modal-close {
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.portfolio-modal-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px;
+  height: calc(100% - 54px);
+}
+
+@media (max-width: 900px) {
+  .portfolio-modal {
+    inset: 6% 4%;
+  }
+  .portfolio-modal-body {
+    grid-template-columns: 1fr;
+    height: auto;
+    max-height: 80vh;
+  }
+}
+
+/* Bildbereich */
+.portfolio-modal-image {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg-tertiary);
+}
+
+/* Navigation im Modal */
+.portfolio-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolio-modal-prev {
+  left: 10px;
+}
+
+.portfolio-modal-next {
+  right: 10px;
+}
+
+/* Textbereich */
+.portfolio-modal-meta {
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  overflow: auto;
+}
+
   /* Kleinere Screens: Spans zurückfahren, damit’s nicht kaputt bricht */
   @media (max-width: 900px) {
     .item--wide,
