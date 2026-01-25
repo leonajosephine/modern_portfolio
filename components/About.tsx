@@ -22,16 +22,19 @@ export default function About() {
     transition={{ duration: 0.6 }}
     >
     <p>
-    Hello! I'm Leona Josephine, a passionate developer and designer who loves creating beautiful and functional
-    digital experiences. With a keen eye for detail and a commitment to excellence, I bring ideas to life through
-    clean code and thoughtful design.
+    Hi! I'm Leona, a passionate developer and designer and I love creating beautiful and functional
+    digital experiences. I have always been fascinated by the ongoing development of technology and I am also a very creative person.
+
+    I try to learn new things very regulary thats why my tech stack might be changing with new trends but underneath you will 
+    find my core skills.
     </p>
     <p>
-    My journey in technology has been driven by curiosity and a desire to solve real-world problems. I
-    specialize in modern web development, focusing on user experience and cutting-edge technologies.
+    If youre interested to see some of my projects I did mostly for fun - have a look at my portfolio!
+
+    Of course feel free to reach out to me via email or on LinkedIn.
     </p>
     <div className="skills">
-        {["UI/UX", "React", "JS", "HTML"].map((skill) => (
+        {["UI/UX", "React", "JS", "HTML", "CSS", "Typescript", "Next.js", "Vercel", "git", "Sitecore", "API", "MangoDB"].map((skill) => (
             <button key={skill} className="skill-button">
                 {skill}
             </button>

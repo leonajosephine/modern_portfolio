@@ -63,3 +63,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 
 // ideas: blakc and white portfolio grid until hover- then it rturn into color 
+Scrolling in project modal geht nicht!!
+Buttpon von contact me bei hover umdrehen (fabe) 
+skills button map in about me section ist nicht responsive 
