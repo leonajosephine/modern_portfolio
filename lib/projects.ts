@@ -93,8 +93,8 @@ export const projects: Project[] = [
     size: "tall"
   },
   {
-    slug: "project-three",
-    title: "Project Three",
+    slug: "To do List App",
+    title: "To do List App",
     short: "Description for project three.",
     cover: "/images/metallic.png",
     hero: { type: "image", src: "/images/metallic.png", alt: "Project three hero" },
@@ -120,8 +120,8 @@ export const projects: Project[] = [
     size: "normal"
   },
   {
-    slug: "project-four",
-    title: "Project Four",
+    slug: "book / reading list app",
+    title: "book / reading list app",
     short: "Description for project four.",
     cover: "/images/websiteshop.jpeg",
     hero: { type: "image", src: "/images/websiteshop.jpeg", alt: "Project four hero" },
