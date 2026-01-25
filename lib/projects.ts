@@ -71,8 +71,8 @@ export const projects: Project[] = [
     slug: "skincare-brand-site",
     title: "Skincare Brand Website",
     short: "Ultra clean product/brand website with editorial visuals.",
-    cover: "/images/skincare-cover.jpg",
-    hero: { type: "image", src: "/images/skincare-hero.jpg", alt: "Skincare hero" },
+    cover: "/images/landingpage.jpeg", //Placeholder image
+    hero: { type: "image", src: "/images/landingpage.jpeg", alt: "Skincare hero" },
     tags: ["Design", "React", "UI", "Brand"],
     meta: { role: "UI/Frontend", year: "2025", duration: "1 week", team: "Solo" },
     links: [
@@ -86,10 +86,64 @@ export const projects: Project[] = [
         { label: "Structure", value: "Component-based sections" }
       ]},
       { type: "gallery", title: "Mockups", items: [
-        { type: "image", src: "/images/skincare-1.jpg" },
-        { type: "image", src: "/images/skincare-2.jpg" }
+        { type: "image", src: "/images/landingpage.jpeg" },
+        { type: "image", src: "/images/landingpage.jpeg" }
       ]}
     ],
     size: "tall"
+  },
+  {
+    slug: "project-three",
+    title: "Project Three",
+    short: "Description for project three.",
+    cover: "/images/metallic.png",
+    hero: { type: "image", src: "/images/metallic.png", alt: "Project three hero" },
+    tags: ["Tag1", "Tag2"],
+    meta: { role: "Role", year: "2024", duration: "3 weeks", team: "Team Name" },
+    links: [
+      { label: "Live Site", href: "https://example.com", kind: "live" },
+      { label: "Repository", href: "https://example.com", kind: "repo" },
+    ],
+    blocks: [
+      { type: "text", title: "Overview", body: "Detailed overview of project three." },
+      { type: "bullets", title: "Key Features", items: [
+        "Feature one",
+        "Feature two",
+        "Feature three"
+      ]},
+      { type: "stack", title: "Technologies Used", items: ["Tech1", "Tech2", "Tech3"] },
+      { type: "gallery", title: "Project Screenshots", items: [
+        { type: "image", src: "/images/metallic.png", alt: "Screenshot one" },
+        { type: "image", src: "/images/metallic.png", alt: "Screenshot two" }
+      ]}
+    ],
+    size: "normal"
+  },
+  {
+    slug: "project-four",
+    title: "Project Four",
+    short: "Description for project four.",
+    cover: "/images/websiteshop.jpeg",
+    hero: { type: "image", src: "/images/websiteshop.jpeg", alt: "Project four hero" },
+    tags: ["TagA", "TagB"],
+    meta: { role: "Role", year: "2023", duration: "4 weeks", team: "Team Alpha" },
+    links: [
+      { label: "Live Demo", href: "https://example.com", kind: "live" },
+      { label: "GitHub", href: "https://example.com", kind: "repo" },
+    ],
+    blocks: [
+      { type: "text", title: "Introduction", body: "Detailed introduction of project four." },
+      { type: "bullets", title: "Main Features", items: [
+        "Feature A",
+        "Feature B",
+        "Feature C"
+      ]},
+      { type: "stack", title: "Used Technologies", items: ["TechA", "TechB", "TechC"] },
+      { type: "gallery", title: "Project Images", items: [
+        { type: "image", src: "/images/websiteshop.jpeg", alt: "Image one" },
+        { type: "image", src: "/images/websiteshop.jpeg", alt: "Image two" }
+      ]}
+    ],
+    size: "big"
   }
 ];
