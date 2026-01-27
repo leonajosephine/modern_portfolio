@@ -43,12 +43,12 @@ export const projects: Project[] = [
     title: "Netflix Rebuild",
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
-    hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix-poster.jpg" },
+    hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix.jpg" },
     tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
     meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
     links: [
       { label: "Live Demo", href: "https://your-demo-url.com", kind: "live" },
-      { label: "GitHub Repo", href: "https://github.com/your-repo", kind: "repo" },
+      { label: "GitHub Repo", href: "https://github.com/leonajosephine/netflix-inspired", kind: "repo" },
     ],
     blocks: [
       { type: "text", title: "Goal", body: "Rebuild a Netflix-like browsing experience with modern transitions and fast navigation." },
@@ -73,13 +73,14 @@ export const projects: Project[] = [
     slug: "skincare-brand-site",
     title: "Skincare Brand Website",
     short: "Ultra clean product/brand website with editorial visuals.",
-    cover: "/images/landingpage.jpeg", //Placeholder image
-    hero: { type: "image", src: "/images/landingpage.jpeg", alt: "Skincare hero" },
-    tags: ["Design", "React", "UI", "Brand"],
+    cover: "/images/lunara-stage-details.png", 
+    hero: { type: "image", src: "/images/lunara-stage-details.png", alt: "Skincare hero" },
+    tags: ["Design", "React", "UI", "Brand", "Responsive", "Mobile-First"],
     meta: { role: "UI/Frontend", year: "2025", duration: "1 week", team: "Solo" },
     links: [
       { label: "Case Study", href: "https://your-site.com/case/skincare", kind: "case" },
       { label: "Figma", href: "https://figma.com/...", kind: "figma" },
+      { label: "Repo", href: "https://github.com/leonajosephine/lunara-skin", kind: "repo" },
     ],
     blocks: [
       { type: "text", title: "Concept", body: "A minimal editorial layout focusing on typography, spacing and strong product storytelling." },
@@ -88,14 +89,17 @@ export const projects: Project[] = [
         { label: "Structure", value: "Component-based sections" }
       ]},
       { type: "gallery", title: "Mockups", items: [
-        { type: "image", src: "/images/landingpage.jpeg" },
-        { type: "image", src: "/images/landingpage.jpeg" }
+        { type: "image", src: "/images/lunara-overview.png" },
+        { type: "image", src: "/images/lunara-divider.png" },
+        { type: "image", src: "/images/lunara-teaser.png" },
+        { type: "image", src: "/images/lunara-stage-details.png" },
+        { type: "image", src: "/images/lunara-mobile.png" }
       ]}
     ],
     size: "tall"
   },
   {
-    slug: "To do List App",
+    slug: "to-do-list",
     title: "To do List App",
     short: "Description for project three.",
     cover: "/images/metallic.png",
@@ -147,5 +151,89 @@ export const projects: Project[] = [
       ]}
     ],
     size: "big"
+  }, 
+  {
+    slug: "mini game",
+    title: "book / reading list app",
+    short: "Description for project four.",
+    cover: "/images/collage.jpg",
+    hero: { type: "image", src: "/images/collage.jpg", alt: "Project four hero" },
+    tags: ["TagA", "TagB"],
+    meta: { role: "Role", year: "2023", duration: "4 weeks", team: "Team Alpha" },
+    links: [
+      { label: "Live Demo", href: "https://example.com", kind: "live" },
+      { label: "GitHub", href: "https://example.com", kind: "repo" },
+    ],
+    blocks: [
+      { type: "text", title: "Introduction", body: "Detailed introduction of project four." },
+      { type: "bullets", title: "Main Features", items: [
+        "Feature A",
+        "Feature B",
+        "Feature C"
+      ]},
+      { type: "stack", title: "Used Technologies", items: ["TechA", "TechB", "TechC"] },
+      { type: "gallery", title: "Project Images", items: [
+        { type: "image", src: "/images/websiteshop.jpeg", alt: "Image one" },
+        { type: "image", src: "/images/websiteshop.jpeg", alt: "Image two" }
+      ]}
+    ],
+    size: "big"
+  },
+  {
+    slug: "Tets",
+    title: "To do List App",
+    short: "Description for project three.",
+    cover: "/images/metallic.png",
+    hero: { type: "image", src: "/images/metallic.png", alt: "Project three hero" },
+    tags: ["Tag1", "Tag2"],
+    meta: { role: "Role", year: "2024", duration: "3 weeks", team: "Team Name" },
+    links: [
+      { label: "Live Site", href: "https://example.com", kind: "live" },
+      { label: "Repository", href: "https://example.com", kind: "repo" },
+    ],
+    blocks: [
+      { type: "text", title: "Overview", body: "Detailed overview of project three." },
+      { type: "bullets", title: "Key Features", items: [
+        "Feature one",
+        "Feature two",
+        "Feature three"
+      ]},
+      { type: "stack", title: "Technologies Used", items: ["Tech1", "Tech2", "Tech3"] },
+      { type: "gallery", title: "Project Screenshots", items: [
+        { type: "image", src: "/images/metallic.png", alt: "Screenshot one" },
+        { type: "image", src: "/images/metallic.png", alt: "Screenshot two" }
+      ]}
+    ],
+    size: "normal"
+  },
+  {
+    slug: "test 2",
+    title: "Netflix Rebuild",
+    short: "Netflix-inspired UI with search, trailers & a personal list.",
+    cover: "/images/netflix.jpg",
+    hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix-poster.jpg" },
+    tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
+    meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
+    links: [
+      { label: "Live Demo", href: "https://your-demo-url.com", kind: "live" },
+      { label: "GitHub Repo", href: "https://github.com/leonajosephine/netflix-inspired", kind: "repo" },
+    ],
+    blocks: [
+      { type: "text", title: "Goal", body: "Rebuild a Netflix-like browsing experience with modern transitions and fast navigation." },
+      { type: "bullets", title: "Highlights", items: [
+        "Trailer modal via TMDB /videos",
+        "Search experience with responsive results grid",
+        "My List stored in localStorage",
+        "Keyboard-friendly interactions"
+      ]},
+      { type: "stack", title: "Tech Stack", items: ["Next.js (App Router)", "TypeScript", "Framer Motion", "TMDB API"] },
+      { type: "gallery", title: "Screens / Interactions", items: [
+        { type: "image", src: "/images/netflix_overview.png", alt: "Homepage" },
+        { type: "image", src: "/images/netflix_movierow_trends.png", alt: "Trends row design" },
+        { type: "image", src: "/images/netflix_moviemodal.png", alt: "Movie detail page" },
+        //{ type: "gif", src: "/images/netflix-scroll.gif", alt: "Scroll interaction" }
+      ]}
+    ],
+    size: "wide"
   }
 ];
