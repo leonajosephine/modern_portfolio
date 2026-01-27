@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Netflix Rebuild",
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
-    hero: { type: "video", src: "/media/netflix-video.mov", poster: "/images/netflix.jpg" },
+    hero: { type: "video", src: "/media/netflix-video.mp4", poster: "/images/netflix.jpg" },
     tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
     meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
     links: [
@@ -127,7 +127,7 @@ export const projects: Project[] = [
   },
   {
     slug: "book / reading list app",
-    title: "book / reading list app",
+    title: "book / reading list app Test",
     short: "Description for project four.",
     cover: "/images/websiteshop.jpeg",
     hero: { type: "image", src: "/images/websiteshop.jpeg", alt: "Project four hero" },
@@ -154,7 +154,7 @@ export const projects: Project[] = [
   }, 
   {
     slug: "mini game",
-    title: "book / reading list app",
+    title: "Mini Game Test",
     short: "Description for project four.",
     cover: "/images/collage.jpg",
     hero: { type: "image", src: "/images/collage.jpg", alt: "Project four hero" },
@@ -181,7 +181,7 @@ export const projects: Project[] = [
   },
   {
     slug: "Tets",
-    title: "To do List App",
+    title: "Test",
     short: "Description for project three.",
     cover: "/images/metallic.png",
     hero: { type: "image", src: "/images/metallic.png", alt: "Project three hero" },
@@ -208,7 +208,7 @@ export const projects: Project[] = [
   },
   {
     slug: "test 2",
-    title: "Netflix Rebuild",
+    title: "Test",
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
     hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix-poster.jpg" },
