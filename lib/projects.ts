@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Netflix Rebuild",
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
-    hero: { type: "video", src: "/media/netflix-demo.mp4", poster: "/images/netflix-poster.jpg" },
+    hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix-poster.jpg" },
     tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
     meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
     links: [
@@ -60,8 +60,10 @@ export const projects: Project[] = [
       ]},
       { type: "stack", title: "Tech Stack", items: ["Next.js (App Router)", "TypeScript", "Framer Motion", "TMDB API"] },
       { type: "gallery", title: "Screens / Interactions", items: [
-        { type: "image", src: "/images/netflix-1.jpg", alt: "Homepage" },
-        { type: "gif", src: "/images/netflix-scroll.gif", alt: "Scroll interaction" }
+        { type: "image", src: "/images/netflix_overview.png", alt: "Homepage" },
+        { type: "image", src: "/images/netflix_movierow_trends.png", alt: "Trends row design" },
+        { type: "image", src: "/images/netflix_moviemodal.png", alt: "Movie detail page" },
+        //{ type: "gif", src: "/images/netflix-scroll.gif", alt: "Scroll interaction" }
       ]}
     ],
     size: "wide"
