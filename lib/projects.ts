@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Netflix Rebuild",
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
-    hero: { type: "video", src: "/media/netflix_rebuild_video.mov", poster: "/images/netflix.jpg" },
+    hero: { type: "video", src: "/media/netflix-video.mov", poster: "/images/netflix.jpg" },
     tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
     meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
     links: [
