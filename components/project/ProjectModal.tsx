@@ -67,6 +67,8 @@ export default function ProjectModal({
           />
           <motion.div
             className="pm-dialog"
+            onWheel={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal="true"
             aria-label={`${current.title} project details`}
