@@ -44,7 +44,7 @@ export const projects: Project[] = [
     short: "Netflix-inspired UI with search, trailers & a personal list.",
     cover: "/images/netflix.jpg",
     hero: { type: "video", src: "/media/netflix-video.mp4", poster: "/images/netflix.jpg" },
-    tags: ["Next.js", "TypeScript", "Framer Motion", "TMDB"],
+    tags: ["Next.js", "React", "TypeScript", "Framer Motion", "TMDB"],
     meta: { role: "Frontend", year: "2026", duration: "2 weeks", team: "Solo" },
     links: [
       { label: "Live Demo", href: "https://your-demo-url.com", kind: "live" },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     slug: "skincare-brand-site",
     title: "Skincare Brand Website",
     short: "Ultra clean product/brand website with editorial visuals.",
-    cover: "/images/lunara-stage-details.png", 
+    cover: "/images/lunara-creme.png", 
     hero: { type: "image", src: "/images/lunara-stage-details.png", alt: "Skincare hero" },
     tags: ["Design", "React", "UI", "Brand", "Responsive", "Mobile-First"],
     meta: { role: "UI/Frontend", year: "2025", duration: "1 week", team: "Solo" },
