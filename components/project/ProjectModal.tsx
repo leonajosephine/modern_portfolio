@@ -99,7 +99,12 @@ export default function ProjectModal({
             <div className="pm-body">
               {/* Left: Media */}
               <div className="pm-left">
-                <MediaRenderer media={current.hero} priority className="pm-heroMedia" />
+                <MediaRenderer
+                    key={`${current.slug}-${current.hero.type === "video" ? current.hero.src : current.hero.type}`}
+                    media={current.hero}
+                    priority
+                    className="pm-heroMedia"
+                    />
 
                 <div className="pm-navRow pm-navRow--inline">
                   <button

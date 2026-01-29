@@ -494,6 +494,30 @@ transition: background .2s ease;
   display:block;
 }
 
+.pm-media--clickable{
+  cursor: pointer;
+}
+
+.pm-videoOverlay{
+  position: absolute;
+  inset: 0;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  padding: 12px;
+  pointer-events: none;
+}
+
+.pm-videoOverlay__badge{
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-secondary) 72%, transparent);
+  backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: .9rem;
+}
+
 /* Prev/Next */
 .pm-navRow{ display:flex; gap: 10px; justify-content: space-between; }
 .pm-nav{
