@@ -33,13 +33,90 @@ export default function About() {
 
     Of course feel free to reach out to me via email or on LinkedIn.
     </p>
-    <div className="skills">
-        {["UI/UX", "React", "JS", "HTML", "CSS", "Typescript", "Next.js", "Vercel", "git", "Sitecore", "API", "MangoDB"].map((skill) => (
-            <button key={skill} className="skill-button">
+    <div className="skills-accordion" aria-label="Skills">
+        <details className="skills-group" open>
+            <summary className="skills-summary">
+            <span>Technical Skills</span>
+            <span className="skills-summary__hint">Core</span>
+            </summary>
+
+            <div className="skills-chips">
+            {[
+                "React",
+                "Next.js",
+                "TypeScript",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "APIs",
+            ].map((skill) => (
+                <span key={skill} className="skill-chip">
                 {skill}
-            </button>
-        ))}
-    </div>
+                </span>
+            ))}
+            </div>
+        </details>
+
+        <details className="skills-group">
+            <summary className="skills-summary">
+            <span>Tools</span>
+            <span className="skills-summary__hint">Daily</span>
+            </summary>
+
+            <div className="skills-chips">
+            {[
+                "Git",
+                "Vercel",
+                "Figma",
+                "Storybook",
+                "Jira",
+                "Sitecore",
+            ].map((skill) => (
+                <span key={skill} className="skill-chip">
+                {skill}
+                </span>
+            ))}
+            </div>
+        </details>
+
+        <details className="skills-group">
+            <summary className="skills-summary">
+            <span>Soft Skills</span>
+            <span className="skills-summary__hint">Collaboration</span>
+            </summary>
+
+            <div className="skills-chips">
+            {[
+                "Creative problem solving",
+                "Communication",
+                "Teamwork",
+                "Ownership",
+                "Fast learner",
+                "Attention to detail",
+            ].map((skill) => (
+                <span key={skill} className="skill-chip">
+                {skill}
+                </span>
+            ))}
+            </div>
+        </details>
+
+        <details className="skills-group">
+            <summary className="skills-summary">
+            <span>Languages</span>
+            <span className="skills-summary__hint">DE / EN</span>
+            </summary>
+
+            <div className="skills-chips">
+            {["German (native)", "English (fluent)"].map((skill) => (
+                <span key={skill} className="skill-chip">
+                {skill}
+                </span>
+            ))}
+            </div>
+        </details>
+        </div>
+
     </motion.div>
     </div>
     </section>
