@@ -424,6 +424,26 @@ transition: background .2s ease;
   opacity: .5;
   cursor: not-allowed;
 }
+.pm-nav{
+  transition: transform .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.pm-nav:hover{
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  background: color-mix(in srgb, var(--bg-tertiary) 70%, var(--accent) 30%);
+  transform: translateY(-1px);
+}
+
+.pm-nav:active{
+  transform: translateY(0px);
+}
+
+.pm-nav:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
 
 /* Right: meta & blocks */
 .pm-right{
@@ -545,7 +565,28 @@ transition: background .2s ease;
   aspect-ratio: 4 / 3;
 }
 
-  /* Kleinere Screens: Spans zurückfahren, damit’s nicht kaputt bricht */
+/* ===== Project Modal: Mobile scroll fix (no nested scroll) ===== */
+  @media (max-width: 900px){
+    /* Der Dialog soll selbst scrollen können */
+    .pm-dialog{
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    /* Body wird nicht extra "scroll container" – sonst nested scroll */
+    .pm-body{
+      height: auto;
+      overflow: visible;
+    }
+  
+    /* Rechte Spalte darf auf Mobile nicht ihr eigenes Scroll-Verhalten erzwingen */
+    .pm-right{
+      overflow: visible;
+      max-height: none;
+    }
+  }
+   
+/* Kleinere Screens: Spans zurückfahren, damit’s nicht kaputt bricht */
   @media (max-width: 900px) {
     .item--wide,
     .item--big { grid-column: span 1; }
