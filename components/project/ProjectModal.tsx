@@ -101,7 +101,7 @@ export default function ProjectModal({
               <div className="pm-left">
                 <MediaRenderer media={current.hero} priority className="pm-heroMedia" />
 
-                <div className="pm-navRow">
+                <div className="pm-navRow pm-navRow--inline">
                   <button
                     className="pm-nav"
                     onClick={() => setOpenIndex(Math.max(0, (openIndex as number) - 1))}
@@ -148,6 +148,28 @@ export default function ProjectModal({
                 <BlockRenderer blocks={current.blocks} />
               </aside>
             </div>
+
+
+                {/* Mobile sticky bottom navigation */}
+                <div className="pm-navRow pm-navRow--sticky" aria-label="Project navigation">
+                <button
+                    className="pm-nav"
+                    onClick={() => setOpenIndex(Math.max(0, (openIndex as number) - 1))}
+                    disabled={(openIndex as number) <= 0}
+                    aria-label="Previous project"
+                >
+                    ← Prev
+                </button>
+                <button
+                    className="pm-nav"
+                    onClick={() => setOpenIndex(Math.min(projects.length - 1, (openIndex as number) + 1))}
+                    disabled={(openIndex as number) >= projects.length - 1}
+                    aria-label="Next project"
+                >
+                    Next →
+                </button>
+                </div>
+
           </motion.div>
         </>
       ) : null}

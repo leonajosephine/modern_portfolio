@@ -444,6 +444,43 @@ transition: background .2s ease;
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+/* ===== Project Modal: Sticky nav on mobile ===== */
+@media (max-width: 900px){
+  /* Inline-Nav (unter dem Video) auf Mobile ausblenden */
+  .pm-navRow--inline{
+    display: none;
+  }
+
+  /* Platz schaffen, damit Content nicht unter der Sticky-Bar verschwindet */
+  .pm-body{
+    padding-bottom: 84px; /* ggf. 76-96px je nach Gefühl */
+  }
+
+  /* Sticky Bottom Bar */
+  .pm-navRow--sticky{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    gap: 10px;
+    padding: 12px 14px;
+
+    border-top: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg-secondary) 92%, transparent);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+  }
+}
+
+/* Desktop: sticky bar nicht anzeigen */
+@media (min-width: 901px){
+  .pm-navRow--sticky{
+    display: none;
+  }
+}
+
 
 /* Right: meta & blocks */
 .pm-right{
