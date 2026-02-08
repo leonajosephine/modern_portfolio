@@ -102,8 +102,8 @@ export const projects: Project[] = [
     slug: "to-do-list",
     title: "To do List App",
     short: "Description for project three.",
-    cover: "/images/metallic.png",
-    hero: { type: "image", src: "/images/metallic.png", alt: "Project three hero" },
+    cover: "/images/todo_overview.png",
+    hero: { type: "image", src: "/images/todo_boards.png", alt: "Project three hero" },
     tags: ["Tag1", "Tag2"],
     meta: { role: "Role", year: "2024", duration: "3 weeks", team: "Team Name" },
     links: [
@@ -119,8 +119,9 @@ export const projects: Project[] = [
       ]},
       { type: "stack", title: "Technologies Used", items: ["Tech1", "Tech2", "Tech3"] },
       { type: "gallery", title: "Project Screenshots", items: [
-        { type: "image", src: "/images/metallic.png", alt: "Screenshot one" },
-        { type: "image", src: "/images/metallic.png", alt: "Screenshot two" }
+        { type: "image", src: "/images/todo_bg.png", alt: "Screenshot one" },
+        { type: "image", src: "/images/todo_overview.png", alt: "Screenshot one" },
+        { type: "image", src: "/images/todo-details.png", alt: "Screenshot two" }
       ]}
     ],
     size: "normal"
